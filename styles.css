@@ -2,11 +2,11 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding: 0;
     height: auto;
 }
 
 h3 {
-    margin-top: 0;
     margin-right: auto;
     font-size: 24px;
     color: #f9faf8;
@@ -23,43 +23,46 @@ a {
 
 .header {
     display: flex;
-    flex: 1;
     color: white;
     justify-content: space-around;
-    padding: 10px 100px 0px 100px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 100px;
     gap: 12px;
     font-size: 10px;
 }
 
 .topsection {
     background-color: #1F2937;
+    padding: 100px 0;
 }
 
 .top {
     display: flex;
-    margin: 50px 100px 50px 100px;
     justify-content: center;
-    gap: 20px;
-    padding: 0 50px 0 50px;
+    margin: 0 auto;
+    padding: 0 100px;
+    max-width: 1100px;
+    
 }
 
 .placeholder, .awesome {
     flex: 1;
-    width: 200px;
 }
 
 .awesome {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0;
     align-items: flex-start;
     color: #e5e7eb;
+    margin-right: 50px;
 }
 
 .placeholder {
     display: flex;
+    flex: 1;
     justify-content: center;
-    align-items: stretch;
 }
 
 .awesome > h1 {
@@ -75,7 +78,9 @@ a {
     justify-content: center;
     align-items: center;
     gap: 25px;
-    margin-top: 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 75px;
 }
 
 .info > h1 {
@@ -83,11 +88,18 @@ a {
     font-weight: 800;
 }
 
-.pictures {
+.pictures, .img-text {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex: 1;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.img-text > p {
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
 }
 
 .pictures > img {
@@ -97,7 +109,55 @@ a {
 
 .quote {
     background-color: #e5e7eb;
-    display: flex;
-    padding: auto;
+    flex: 1;
+}
 
+.quote-text {
+    padding: 100px;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cite {
+    text-align: end;
+    margin-top: 25px;
+    font-weight: 300;
+}
+
+.signup {
+    background-color: #3882f6;
+    color: white;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    max-height: 200px;
+    margin: 75px auto;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    font-size: 8px;
+}
+
+button {
+    background-color: #3882f6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    width: 110px;
+}
+.signup > button {
+    border: solid 2px white;
+    height: 50px;
+    margin-left: 200px;
 }
